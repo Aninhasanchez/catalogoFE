@@ -1,0 +1,7 @@
+.container{
+    background-color: #020202;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
