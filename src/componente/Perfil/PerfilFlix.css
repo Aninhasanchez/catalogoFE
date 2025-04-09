@@ -1,0 +1,124 @@
+body, .app {
+    font-family: 'Merienda', cursive;
+    background-color: #1B1B1B;
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 2rem;
+    cursor: pointer;
+  }
+  
+  .perfis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .perfis button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .perfis img {
+    border: 2px solid white;
+    transition: transform 0.3s;
+  }
+  
+  .perfis img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px red;
+  }
+  
+  .conteudo {
+    padding: 2rem;
+  }
+  
+  .trocar {
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    background: none;
+    border: 1px solid #DA1E26;
+    color: #DA1E26;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .trocar:hover {
+    background: #DA1E26;
+    color: white;
+  }
+  
+  .box {
+    margin-bottom: 2rem;
+    border: 1px solid #DA1E26;
+    padding: 1rem;
+  }
+  
+  .box legend {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+  
+  .box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .box img {
+    border: 2px solid white;
+    transition: transform 0.3s;
+  }
+  
+  .box img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #DA1E26;
+  }
+  
+  .trailer {
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+  
+  .trailer h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .trailer button {
+    background: #DA1E26;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1B1B1B;
+  }
+  
+  .header:hover {
+    text-decoration: underline;
+    color: #DA1E26;
+  }
+  
