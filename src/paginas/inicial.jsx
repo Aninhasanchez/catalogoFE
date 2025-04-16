@@ -1,6 +1,6 @@
 import { Barranavegacao } from "../componente/Navegacao/Barranavegacao";
 import { Cabecalho } from "../componente/Header/Cabecalho";
-import { Conteudo } from "../componente/Conteudo";
+import { Outlet } from "react-router-dom";
 
 
 export function Inicial()
@@ -9,7 +9,8 @@ export function Inicial()
     <>
       <Barranavegacao/>
       <Cabecalho/>
-      <Conteudo/>
+      <Outlet/>
+       {/* espaço variavel que comporta os componentes da minha aplicacao */}
   
     </>
 

@@ -1,21 +1,26 @@
 import estilos from './Barranavegacao.module.css';
+import { Link } from 'react-router-dom';
 
 
 export function Barranavegacao(){
     return(
         <nav className={estilos.container}>
             <ul>
+                <Link to='/'>
                 <li><span className="material-symbols-outlined">home</span>
                     Home
                 </li>
-
+                </Link>
+                <Link to='serie'>
                 <li><span className="material-symbols-outlined">movie</span>
-                    Filmes
+                    Serie
                 </li>
-
+                </Link>
+                <Link to='perfil'>
                 <li><span className="material-symbols-outlined">person</span>
                     Perfil
                 </li>
+                </Link>
             </ul>
         </nav>
     )
