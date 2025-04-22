@@ -6,6 +6,11 @@ export function Barranavegacao(){
     return(
         <nav className={estilos.container}>
             <ul>
+            <Link to='menu'>
+                <li><span className="material-symbols-outlined">menu</span>
+                    Menu
+                </li>
+                </Link>
                 <Link to='/'>
                 <li><span className="material-symbols-outlined">home</span>
                     Home

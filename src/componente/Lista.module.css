@@ -4,6 +4,10 @@
     gap: 10px;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 130px;
     background-color: rgb(201, 183, 183);
+}
+
+figure {
+    display: flex;
+    justify-content: center;
 }
