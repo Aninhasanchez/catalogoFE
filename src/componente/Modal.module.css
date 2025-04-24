@@ -4,15 +4,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7); /* Escurecer o fundo */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
 }
- 
+
 .modalConteiner {
-    background-color: rgb(28, 28, 29);
+    background-color: #f0f8ff; /* Azul claro suave */
     padding: 20px;
     border-radius: 15px;
     width: 80%;
@@ -21,55 +21,100 @@
     overflow: auto;
     display: flex;
     flex-direction: column;
-    align-items: stretch; 
-    
-    position: relative; 
+    align-items: stretch;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
 }
+
 .modalHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
+    border-bottom: 2px solid #d1eaff; /* Linha inferior clara */
+    padding-bottom: 10px;
 }
- 
+
 .modalHeader h2 {
-    color: rgb(199, 184, 100);
+    color: #333; /* Cor do título em cinza escuro */
     text-align: center;
     flex-grow: 1;
+    font-size: 1.5rem;
 }
- 
+
+.closeButton {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.closeButton:hover {
+    color: #ff6347; /* Cor de destaque ao passar o mouse (tom alaranjado) */
+}
+
 .imgAndDetails {
     display: flex;
-    gap: 20px; }
- 
+    gap: 20px;
+}
+
 .imgModal {
     width: 40%;
     max-width: 300px;
     height: auto;
     border-radius: 15px;
+    border: 2px solid #ddd; /* Bordas suaves */
 }
- 
+
 .movieDetails {
-    flex: 1; 
+    flex: 1;
     display: flex;
     flex-direction: column;
+    color: #444; /* Cor do texto */
 }
- 
-p {
-    font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 5px 0; 
-    color: rgb(230, 229, 224);
-    text-align: left;
+
+.movieDetails ul {
+    list-style: none;
+    padding: 0;
 }
- 
+
+.movieDetails li {
+    font-size: 1rem;
+    padding: 5px 0;
+    color: #666; /* Texto em cinza */
+}
+
 button {
-    background-color: rgb(70, 70, 70);
+    background-color: #4caf50; /* Verde suave */
     border-radius: 50px;
-    color: aliceblue;
+    color: white;
     font-size: 15px;
-    padding: 8px 12px; 
+    padding: 8px 12px;
     border: none;
     cursor: pointer;
-    align-self: flex-start; 
+    align-self: flex-start;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #69906b; /* Cor de hover para o botão */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .imgModal {
+        width: 60%;
+    }
+
+    .movieDetails {
+        font-size: 0.9rem;
+    }
+
+    .modalConteiner {
+        width: 95%;
+        padding: 15px;
+    }
 }

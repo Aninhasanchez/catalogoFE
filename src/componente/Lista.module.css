@@ -1,13 +1,25 @@
-.conteiner{
+.conteiner {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(201, 183, 183);
+    font-family: 'Arial', Helvetica, sans-serif;
+    background-color: #d0e7f9; /* Azul clarinho */
+    padding: 20px 0;
 }
 
 figure {
     display: flex;
     justify-content: center;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+figure img:hover {
+    transform: scale(1.05);
 }

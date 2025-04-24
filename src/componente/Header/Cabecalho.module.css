@@ -1,20 +1,39 @@
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#411818, #792d2d);
-    /* background-color: rgb(56, 56, 61); */
+    background: linear-gradient(to right, #7f5af0, #2cb67d);
     height: 150px;
-}
-
-h1{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    color: red;
-}
-
-
-
-
-
-
+    animation: fadeSlideDown 1s ease forwards;
+  }
+  
+  h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(44, 182, 125, 0.7);
+    animation: pulseGlow 2s infinite alternate;
+  }
+  
+  /* 🎬 Animações */
+  @keyframes fadeSlideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulseGlow {
+    0% {
+      text-shadow: 2px 2px 8px rgba(44, 182, 125, 0.4);
+    }
+    100% {
+      text-shadow: 2px 2px 16px rgba(44, 182, 125, 1);
+    }
+  }
+  

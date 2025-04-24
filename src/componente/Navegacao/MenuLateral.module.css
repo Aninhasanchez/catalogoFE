@@ -1,0 +1,73 @@
+.menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+.menuContent {
+  background-color: #d0e7f9; /* Azul clarinho suave */
+  width: 250px;
+  height: 100%;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  animation: slideIn 0.3s forwards;
+}
+
+.fechar {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  color: #333; /* Cor neutra para o botão de fechar */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: #333; /* Cor do texto */
+  transition: color 0.3s ease;
+}
+
+li:hover {
+  color: #7f5af0; /* Cor do texto ao passar o mouse (roxo) */
+}
+
+a {
+  text-decoration: none;
+  color: #333; /* Cor do texto do link */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #7f5af0; /* Cor do link ao passar o mouse */
+}
+
+/* 🔽 Animações */
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

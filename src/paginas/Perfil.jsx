@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import estilos from './Perfil.module.css';
 
 const perfis = [
-  { nome: "João", imagem: "/imagens/imagem1.jpg" },
-  { nome: "Maria", imagem: "/imagens/imagem2.jpg" },
-  { nome: "Carlos", imagem: "/imagens/imagem3.jpg" },
-  { nome: "Ana", imagem: "/imagens/ana.png" }
+  { nome: "Viviane", imagem: "/imagens/imagem1.jpg" },
+  { nome: "Celso", imagem: "/imagens/imagem2.jpg" },
+  { nome: "Marcos", imagem: "/imagens/verde.jpg" },
+  { nome: "Ana", imagem: "/imagens/Aninha.jpg" }
 ];
 
 export function Perfil() {

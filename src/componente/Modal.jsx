@@ -13,16 +13,16 @@ export function Modal({ movie, onClose }) {
             <div className={estilos.modalConteiner}>
                 <div className={estilos.modalHeader}>
                     <h2>{movie.title}</h2>
-                    <button onClick={onClose}>x</button>
+                    <button onClick={onClose} className={estilos.closeButton}>X</button>
                 </div>
                 <div className={estilos.imgAndDetails}>
                     <img className={estilos.imgModal} src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
                     <div className={estilos.movieDetails}>
                         <ul>
-                        <li>{`Popularidade: ${movie.popularity}`}</li>
-                        <li>{`Data de Lançamento: ${movie.release_date}`}</li>
-                        <li>{`Quantidade de Votos: ${movie.vote_count }`}</li>
-                        <li>{`Sinopse: ${movie.overview}`}</li>
+                            <li>{`Popularidade: ${movie.popularity}`}</li>
+                            <li>{`Data de Lançamento: ${movie.release_date}`}</li>
+                            <li>{`Quantidade de Votos: ${movie.vote_count}`}</li>
+                            <li>{`Sinopse: ${movie.overview}`}</li>
                         </ul>
                     </div>
                 </div>

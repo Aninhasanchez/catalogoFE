@@ -1,14 +1,45 @@
-.container{
-    background-color: #a01414;
+.container {
+    background: linear-gradient(to right, #7f5af0, #2cb67d);
     padding: 10px;
-}
-
-.container ul{
+  }
+  
+  .container ul {
     display: flex;
+    cursor: pointer;
     gap: 20px;
     list-style-type: none;
-    color: rgb(180, 73, 73);
-}
-
-
-
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.4rem;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .container li {
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .container li:hover {
+    transform: scale(1.1);
+    color: #d6fffa;
+  }
+  
+  .material-symbols-outlined {
+    margin-right: 5px;
+    vertical-align: middle;
+    font-size: 1.5rem;
+  }
+  
+  /* Animação de entrada */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
